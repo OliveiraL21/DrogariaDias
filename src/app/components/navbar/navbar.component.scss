@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #00bfbd;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.logotipo__navbar {
+  width: 150px;
+  height: 90px;
+  margin-left: 40px;
+}
+
+.nav_menu {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  margin-right: 150px;
+}
+
+.nav_menu > li {
+  margin-right: 30px;
+}
+
+.nav_menu > li > a {
+  text-decoration: none;
+  color: #f8f8f8;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
