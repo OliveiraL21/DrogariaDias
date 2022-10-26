@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "CevicheOne";
+  src: url("assets/fonts/Ceviche_One/CevicheOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("assets/fonts/Helvetica-Font/Helvetica.ttf");
+}
+
 body,
 div,
 span,
@@ -124,4 +134,10 @@ table {
 
 body {
   background-image: url("assets/images/backgroup/background9.jpg");
+}
+
+p,
+a,
+li {
+  font-family: "Helvetica";
 }
