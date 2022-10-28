@@ -4,6 +4,7 @@
 .home_img {
   width: 850px;
   height: 595px;
+  margin: 20px;
 }
 
 .home_content {
@@ -43,10 +44,12 @@
   background-position: center;
   height: 500px;
   width: 60%;
+  margin-bottom: 20px;
+  margin: 20px;
 }
 
 .sobre_nos_conteudo {
-  width: 40%;
+  width: 35%;
   padding: 20px;
   text-align: justify;
   line-height: 20px;
@@ -155,7 +158,7 @@
 }
 
 .contatos_content {
-  width: 50%;
+  width: 30%;
   padding: 5rem;
   margin-left: 5rem;
 }
@@ -168,4 +171,14 @@
 
 .contatos_content > ul > li {
   margin-bottom: 10px;
+}
+
+.contato_img {
+  background-image: url("../../../assets/images/ilustrações/contact.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 50%;
+  margin-right: 30px;
 }
