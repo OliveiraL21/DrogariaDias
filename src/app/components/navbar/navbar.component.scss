@@ -41,3 +41,14 @@
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
 }
+
+@media (max-width: 1024px) {
+  .logotipo__navbar {
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  .header {
+    width: 100%;
+  }
+}

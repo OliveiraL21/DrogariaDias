@@ -182,3 +182,60 @@
   width: 50%;
   margin-right: 30px;
 }
+
+@media screen and (max-width: 1024px) {
+  .home_content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .home_content_slogan {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .home_content_slogan > h1 {
+    margin: 0 20px;
+    font-size: 36px;
+  }
+  .home_main_img {
+    width: 100%;
+  }
+  .home_img {
+    width: 100%;
+    height: 100%;
+  }
+  .sobreNos {
+    flex-direction: column;
+  }
+  .sobre_nos_img {
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .sobre_nos_conteudo {
+    width: 90%;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contatos {
+    display: flex;
+    flex-direction: column;
+  }
+  .contatos_content {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .contato_img {
+    width: 100%;
+    margin: 0;
+    background-size: contain;
+  }
+}
