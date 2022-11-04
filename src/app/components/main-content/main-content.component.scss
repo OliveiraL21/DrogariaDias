@@ -186,7 +186,8 @@
 @media screen and (max-width: 1024px) {
   .home_content {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+
     width: 100%;
   }
   .home_content_slogan {
@@ -224,7 +225,7 @@
 
   .contatos {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .contatos_content {
     width: 100%;
