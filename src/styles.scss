@@ -111,6 +111,8 @@ section {
 }
 body {
   line-height: 1;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 ol,
 ul {
