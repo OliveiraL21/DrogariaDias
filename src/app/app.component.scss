@@ -3,7 +3,7 @@
   flex-direction: row;
   align-items: center;
   width: 100%;
-  background-color: #500507 ;
+  background-color: #b60b11 ;
 }
 
 .header  > h1{
@@ -19,23 +19,29 @@
 
 .menu_item{
   margin: 0 10px;
+  transition: transform 0.2s;
+}
+
+.menu_item:hover{
+  transform: scale(1.2);
 }
 
 .menu_link{
   text-decoration: none;
   color: #f8f8f8;
   font-weight: bold;
+  transition: transform 0.2s;
 
 }
 
 .menu_link:hover{
   color: #009dff;
-  scale: 1.2;
+
 }
 
 .logotipo__navbar {
-  width: 150px;
-  height: 90px;
+  width: 100px;
+  height: 80px;
   margin-left: 40px;
 
 }
@@ -130,10 +136,11 @@
 
 .img_card {
   background-image: url("../assets/images/ilustrações/visual.png");
-  height: 10vh;
+  height: 130px;
   width: 100%;
-  background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   margin-top: 20px;
 }
 .card > h3 {
@@ -161,14 +168,13 @@
 .card:nth-child(1) > .img_card {
   background-image: url("../assets/images/ilustrações/goal.png");
   width: 100%;
-  height: 255px;
-
+  height: 130px;
 }
 
 .card:last-child > .img_card {
   background-image: url("../assets/images/ilustrações/balance.png");
   width: 100%;
-  height: 255px;
+  height: 130px;
   margin-top: 0;
 }
 
@@ -194,7 +200,7 @@
   width: 100%;
   padding: 5rem;
 
-  background-color: #500507 ;
+  background-color: #b60b11 ;
 }
 .contatos_titulo {
   font-family: "Goudy Bookletter 1911", serif;
