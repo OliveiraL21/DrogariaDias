@@ -3,38 +3,37 @@
   flex-direction: row;
   align-items: center;
   width: 100%;
-  background-color: #ee4d52 ;
+  background-color: #ee4d52;
 }
 
-.header  > h1{
+.header>h1 {
   font-size: 2.5rem;
-  color:#f8f8f8;
+  color: #f8f8f8;
 }
 
-.menu_principal{
+.menu_principal {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
 
-.menu_item{
+.menu_item {
   margin: 0 10px;
   transition: transform 0.2s;
 }
 
-.menu_item:hover{
+.menu_item:hover {
   transform: scale(1.2);
 }
 
-.menu_link{
+.menu_link {
   text-decoration: none;
   color: #f8f8f8;
   font-weight: bold;
   transition: transform 0.2s;
-
 }
 
-.menu_link:hover{
+.menu_link:hover {
   color: #009dff;
 
 }
@@ -46,7 +45,7 @@
 
 }
 
-.nav_menu{
+.nav_menu {
   width: 70%;
 }
 
@@ -61,12 +60,11 @@
   }
 }
 
-
-
 .home_section {
   width: 100%;
 
 }
+
 .home_img {
   width: 100%;
   height: 800px;
@@ -78,35 +76,40 @@
 
 .sobreNos {
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  padding: 20px 0;
+  scroll-behavior: smooth;
 }
+
 .sobre_nos_img {
   background-image: url("../assets/images/ilustrações/aboutUs.jpg");
+  object-fit: fill;
   background-position: center;
-  height: 100vh;
-  width: 60%;
+  height: 550px;
+  width: 40%;
   margin-bottom: 20px;
-  margin: 20px;
+  margin-right: 80px;
 }
 
 .sobre_nos_conteudo {
-  width: 100%;
+  width: 60%;
   max-width: 700px;
   padding: 20px;
   text-align: justify;
   line-height: 20px;
+  margin-left: 40px;
 }
 
-.sobre_nos_conteudo > h2 {
+.sobre_nos_conteudo>h2 {
   font-family: "Goudy Bookletter 1911", serif;
   font-size: 2.5rem;
   margin-bottom: 20px;
   text-align: center;
+  padding: 10px;
   color: #004976;
 }
 
-.sobre_nos_conteudo > p {
+.sobre_nos_conteudo>p {
   font-family: "Helvetica";
 }
 
@@ -120,7 +123,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
+  min-height: 600px;
   padding: 20px;
 }
 
@@ -129,14 +134,14 @@
   border-radius: 10px;
   box-shadow: 4px 2px 10px 0px rgba(0, 0, 0, 0.5);
   background-color: #f8f8f8;
-  height: 280px;
-  width: 300px;
-  padding: 10px;
+  height: 20rem;
+  width: 20rem;
+  padding: 20px;
   margin: 25px 0;
   transition: transform 0.5s;
 }
 
-.card:hover{
+.card:hover {
   transform: scale(1.2);
 }
 
@@ -149,7 +154,8 @@
   background-position: center;
   margin-top: 10px;
 }
-.card > h3 {
+
+.card>h3 {
   font-family: "Fredoka One", cursive;
   margin-top: 10px;
   font-size: 24px;
@@ -165,35 +171,44 @@
   padding-right: 25px;
   font-size: 14px;
 }
-.card_content > p {
+
+.card_content>p {
   width: 100%;
   padding: 10px;
   text-align: left;
   color: #000;
 }
 
-.card:nth-child(1) > .img_card {
+.card:nth-child(1)>.img_card {
   background-image: url("../assets/images/ilustrações/goal.png");
 
 }
 
-.card:last-child > .img_card {
+.card:last-child>.img_card {
   background-image: url("../assets/images/ilustrações/balance.png");
   margin-top: -5px;
 }
 
-.card:last-child > .card_content > ul {
+.card:last-child>.card_content>ul {
   width: 100%;
   list-style: inside;
   text-align: left;
 }
 
-.card:last-child > .card_content > ul > li {
+.card:last-child>.card_content>ul>li {
   margin: 5px 0;
   margin-left: 30px;
   text-align: left;
   color: #000;
 }
+
+
+.valores__list li {
+  padding: 5px 0;
+}
+
+
+/*CONTATOS*/
 
 .contatos {
   display: flex;
@@ -204,57 +219,66 @@
   width: 100%;
   padding: 5rem;
 
-  background-color: #ee4d52 ;
+  background-color: #ee4d52;
 }
+
 .contatos_titulo {
   font-family: "Goudy Bookletter 1911", serif;
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #f8f8f8 ;
+  color: #f8f8f8;
 }
 
-.contatos_content > ul > li {
+.contatos_content>ul>li {
   margin-bottom: 10px;
-  color:#f8f8f8;
+  color: #f8f8f8;
 }
 
 
 @media screen and (max-width: 1024px) {
-  .header>h1{
+  .header>h1 {
     font-size: 24px;
     width: 65%;
     margin-left: 5px;
   }
+
   .home_content {
     display: flex;
     flex-direction: column-reverse;
 
     width: 100%;
   }
+
   .home_content_slogan {
     width: 100%;
     margin-top: 20px;
   }
-  .home_content_slogan > h1 {
+
+  .home_content_slogan>h1 {
     margin: 0 20px;
     font-size: 36px;
   }
+
   .home_main_img {
     width: 100%;
   }
+
   .home_img {
     width: 100%;
     height: 100%;
   }
+
   .sobreNos {
     flex-direction: column;
   }
+
   .sobre_nos_img {
     width: 90%;
     background-size: contain;
     background-repeat: no-repeat;
   }
+
   .sobre_nos_conteudo {
     width: 90%;
   }
@@ -269,6 +293,7 @@
     display: flex;
     flex-direction: column-reverse;
   }
+
   .contatos_content {
     width: 100%;
     padding: 0;
