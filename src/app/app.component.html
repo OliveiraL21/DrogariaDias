@@ -1,36 +1,36 @@
-<main class="main__content">
+<main style="width: 100vw">
   <header class="header">
-    <img class="logotipo__navbar" src="../../../assets/images/Logotipos_Novos/Drogaria Dias cruz.svg"
+    <img class="header__logotipo" src="../../../assets/images/Logotipos_Novos/Drogaria Dias cruz.svg"
       alt="Logotipo da empresa" />
     <h1>Drogaria Dias</h1>
 
-    <div class="nav_menu">
-      <ul class="menu_principal">
-        <li class="menu_item">
-          <a class="menu_link" href="#sobreNos">Sobre Nós</a>
+    <div class="header__menuContainer">
+      <ul class="header__menu">
+        <li class="header__menu__item">
+          <a class="header__menu__link" href="#sobre_nos">Sobre Nós</a>
         </li>
-        <li class="menu_item"><a class="menu_link" href="#filosofia">Filosofia</a></li>
-        <li class="menu_item">
-          <a class="menu_link" href="#contatos">Contatos</a>
+        <li class="header__menu__item"><a class="header__menu__link" href="#filosofia">Filosofia</a></li>
+        <li class="header__menu__item">
+          <a class="header__menu__link" href="#contatos">Contatos</a>
         </li>
       </ul>
     </div>
 
   </header>
 
-  <section class="home_section">
-    <div class="home_content">
+  <section class="home__section">
+    <div class="home__content">
 
 
-      <img class="home_img" src="../assets/images/ilustrações/banner-medico-com-medico-segurando-estetoscopio.jpg"
+      <img class="home__banner" src="../assets/images/ilustrações/banner-medico-com-medico-segurando-estetoscopio.jpg"
         alt="Imagem com slogan da empresa" />
 
     </div>
   </section>
 
-  <section id="sobreNos" class="sobreNos">
-    <div class="sobre_nos_img"></div>
-    <div class="sobre_nos_conteudo">
+  <section id="sobre_nos" class="sobreNos">
+    <div class="sobreNos__img"></div>
+    <div class="sobreNos__conteudo">
       <h2>Sobre Nós</h2>
       <p>
         Estamos no mercado a mais de 30 anos e temos o prazer de ao longo dos
@@ -49,14 +49,6 @@
         garantir
         que o tratamento seja 100% efetivo.
         <br>
-
-
-
-        <!-- para trazer mais qualidade em
-        nossos serviços e promover a satisfação para todos os nosso clientes,
-        priorizando o atendimento de qualidade e preciso, para que todas as
-        informações e duvidas sobre nossos produtos e serviços sejam esclarecidas
-        para todos os nossos clientes. -->
       </p>
     </div>
   </section>
@@ -64,25 +56,27 @@
   <div class="divider"></div>
 
 
+  <h2 class="valores__title">Nossos Valores</h2>
   <section id="filosofia" class="cards">
+
     <div class="card">
-      <div class="img_card"></div>
+      <div class="card__img"></div>
       <h3>Missão</h3>
-      <div class="card_content">
+      <div class="card__content">
         <p>
           Promover mais saúde e bem estar a todos, servindo com qualidade,
-          segurança e Confiança.
-        </p>
-        <p>Levamos nossa missão com muita seriedade e comprometimento, pois para nós nossos clientes são como membros de
+          segurança e confiança.<br><br>
+          Levamos nossa missão com muita seriedade e comprometimento, pois para nós nossos clientes são como membros de
           nossa familía.
         </p>
+
       </div>
     </div>
     <div class="card">
-      <div class="img_card"></div>
+      <div class="card__img"></div>
       <h3>Visão</h3>
 
-      <div class="card_content">
+      <div class="card__content">
         <p>
           Ser Aliada de nossos clientes, mantendo seu bem estar, saúde e
           satisfação como prioridade. <br /><br />
@@ -92,9 +86,9 @@
       </div>
     </div>
     <div class="card">
-      <div class="img_card"></div>
+      <div class="card__img"></div>
       <h3>Valores</h3>
-      <div class="card_content">
+      <div class="card__content">
         <ul class="valores__list">
           <li>Cliente satisfeito.</li>
           <li>Oferecer atendimentos de qualidade.</li>
@@ -114,7 +108,7 @@
   <footer id="contatos" class="contatos">
     <div class="contatos_content">
       <h2 class="contatos_titulo">Contatos<i></i></h2>
-      <ul>
+      <ul class="contatos__list">
         <li>Telefone:(19) 3861-7897 ou (19) 3361-0716</li>
         <li>E-mail: drogariadias@bol.com.br</li>
         <li>
@@ -123,6 +117,9 @@
         </li>
         <li></li>
       </ul>
+      <span class="contatos__copyright">copyright <span
+          style="display: inline-block; font-size: 16px; color: #ffffff; background: transparent; border-radius: 6px; padding: 0 5px;">©</span>{{year}}
+        Drogaria Dias - Todos os direitos reservados</span>
     </div>
   </footer>
 
