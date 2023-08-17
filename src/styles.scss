@@ -8,6 +8,22 @@
   src: url("assets/fonts/Helvetica-Font/Helvetica.ttf");
 }
 
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate--sections {
+  animation: slide-in 2s ease-in-out;
+}
+
 ::-webkit-scrollbar-thumb {
   border-radius: 18px;
   background-color: #e70d14;

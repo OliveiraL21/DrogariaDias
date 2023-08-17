@@ -15,4 +15,9 @@ export class AppComponent {
       page?.classList.add('page--scroll');
     });
   }
+
+  ngOnInit() {
+
+  }
+
 }
