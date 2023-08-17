@@ -14,6 +14,7 @@ export class AppComponent {
       const page = document.querySelector('html');
       page?.classList.add('page--scroll');
     });
+
   }
 
   ngOnInit() {
