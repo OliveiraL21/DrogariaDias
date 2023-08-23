@@ -7,18 +7,11 @@
   width: 100%;
   background-color: #ee4d52;
   position: fixed;
-  z-index: 1;
-  padding: 10px;
 }
 
 .header>h1 {
   font-size: 2.5rem;
   color: #f8f8f8;
-}
-
-.page--scroll {
-  scroll-behavior: smooth;
-  transition: smooth 3s 1s ease-out;
 }
 
 .header__logotipo {
@@ -62,25 +55,10 @@
   .header__logotipo {
     margin: 0 auto;
     margin-top: 10px;
-    width: 80px;
-    height: 80px;
   }
 
   .header {
     width: 100%;
-  }
-
-  .header__menu {
-    flex-direction: column;
-    justify-content: flex-end;
-  }
-
-  .header__menu__item {
-    margin: 0;
-  }
-
-  .header__menu__item:hover {
-    transform: scale(0.9);
   }
 }
 
@@ -91,12 +69,15 @@
 
 .home__section {
   width: 100%;
+
 }
 
 .home__banner {
   width: 100%;
-  object-fit: cover;
-
+  height: 800px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* FIM DO HOME SECTION */
@@ -107,18 +88,16 @@
 .sobreNos {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 20px 0;
-  animation: slide-in 2s ease-in-out;
+  padding: 120px 0;
 }
 
 .sobreNos__img {
-  background-image: url("../assets/images/About\ us.png");
+  background-image: url("../assets/images/ilustrações/aboutUs.jpg");
+  object-fit: fill;
   background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
   height: 550px;
   width: 40%;
+  margin-bottom: 20px;
   margin-right: 80px;
 }
 
@@ -158,6 +137,20 @@
 
 /* SECTION FILOSOFIA/VALOR */
 
+#filosofia {
+  padding: 80px 0;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-height: 600px;
+  padding: 20px;
+}
+
 .valores__title {
   font-family: "Goudy Bookletter 1911", serif;
   font-size: 3rem;
@@ -165,28 +158,15 @@
   text-align: center;
   padding: 10px;
   color: #004976;
-  animation: slide-in 2s ease-in-out;
 }
-
-.cards {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
-  min-height: 600px;
-  animation: slide-in 2s ease-in-out;
-}
-
-
 
 .card {
   border: 0;
-  border-radius: 6px;
+  border-radius: 10px;
   box-shadow: 4px 2px 10px 0px rgba(0, 0, 0, 0.5);
-  background-color: #fff;
-  height: 350px;
-  width: 250px;
+  background-color: #f8f8f8;
+  height: 360px;
+  width: 320px;
   padding: 10px;
   transition: transform 0.5s;
 }
@@ -202,7 +182,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .card>h3 {
@@ -214,20 +194,18 @@
 }
 
 .card__content {
-  margin-top: 5px;
+  margin-top: 30px;
   width: 100%;
   padding-right: 25px;
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 0.98em;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .card__content>p {
   width: 90%;
-  margin-top: 20px;
-  text-align: center;
+  padding: 10px 40px 10px 10px;
+  text-align: left;
   color: #000;
 }
 
@@ -244,14 +222,14 @@
 .card:last-child>.card__content>ul {
   width: 100%;
   list-style: inside;
-  padding: 10px;
-  margin-top: 20px;
+  text-align: left;
 }
 
 .card:last-child>.card__content>ul>li {
-  margin: 0;
+  margin: 5px 0;
+  margin-left: 30px;
+  text-align: left;
   color: #000;
-
 }
 
 
@@ -265,6 +243,7 @@
 .contatos {
   display: flex;
   flex-direction: row;
+
 }
 
 .contatos_content {
@@ -300,42 +279,44 @@
     margin-left: 5px;
   }
 
-  .home__section {
+  .home_content {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column-reverse;
+
+    width: 100%;
   }
 
-  .home__banner {
-    background-image: url('../assets/images/drogaria_dias_mobile.png');
-    object-fit: fill;
-    object-position: center;
-    background-repeat: no-repeat;
-    height: 320px;
+  .home_content_slogan {
     width: 100%;
-    padding: 0;
-    margin: 0;
+    margin-top: 20px;
+  }
 
+  .home_content_slogan>h1 {
+    margin: 0 20px;
+    font-size: 36px;
+  }
+
+  .home_main_img {
+    width: 100%;
+  }
+
+  .home_img {
+    width: 100%;
+    height: 100%;
   }
 
   .sobreNos {
     flex-direction: column;
   }
 
-  .sobreNos__img {
-    width: 100%;
-    margin: 0 auto;
+  .sobre_nos_img {
+    width: 90%;
     background-size: contain;
     background-repeat: no-repeat;
   }
 
-  .sobreNos__conteudo {
-    width: 80%;
-    padding: 0 10px;
-  }
-
-  .valores__title {
-    margin-left: 50px;
+  .sobre_nos_conteudo {
+    width: 90%;
   }
 
   .cards {
@@ -344,29 +325,21 @@
     align-items: center;
   }
 
-  .card {
-    margin: 20px 0;
-    width: 300px;
-  }
-
   .contatos {
     display: flex;
+    flex-direction: column-reverse;
   }
 
-  .contatos__content {
+  .contatos_content {
     width: 100%;
     padding: 0;
     margin: 0;
     text-align: center;
   }
 
-  .contato__img {
+  .contato_img {
     width: 100%;
     margin: 0;
     background-size: contain;
-  }
-
-  .contatos__copyright {
-    margin-right: 10px;
   }
 }
