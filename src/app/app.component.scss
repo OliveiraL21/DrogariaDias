@@ -7,6 +7,7 @@
   width: 100%;
   background-color: #ee4d52;
   position: fixed;
+  z-index: 1;
 }
 
 .header>h1 {
@@ -92,22 +93,24 @@
 }
 
 .sobreNos__img {
-  background-image: url("../assets/images/ilustrações/aboutUs.jpg");
-  object-fit: fill;
+  background-image: url("../assets/images/About\ us.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
-  height: 550px;
-  width: 40%;
+  height: 650px;
+  width: 50%;
   margin-bottom: 20px;
-  margin-right: 80px;
+  margin-top: -120px;
+  margin-right: 60px;
 }
 
 .sobreNos__conteudo {
-  width: 60%;
+  width: 50%;
   max-width: 700px;
   padding: 20px;
   text-align: justify;
   line-height: 20px;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 .sobreNos__conteudo>h2 {
@@ -327,7 +330,6 @@
 
   .contatos {
     display: flex;
-    flex-direction: column-reverse;
   }
 
   .contatos_content {
@@ -341,5 +343,74 @@
     width: 100%;
     margin: 0;
     background-size: contain;
+  }
+}
+
+/*  MOBILE SCREEN */
+
+@media screen and (max-width: 700px) {
+
+  .header {
+    padding: 10px 0;
+  }
+
+  .header__menuContainer {
+    width: 80%;
+  }
+
+  .header__menu {
+    flex-direction: column;
+    padding-left: 10px;
+  }
+
+  .header__logotipo {
+    width: 30%;
+  }
+
+  .header__menu__link {
+    font-size: 14px;
+  }
+
+
+  .home__banner {
+    background-image: url('../assets/images/drogaria_dias_mobile.png');
+    padding-top: 90px;
+    height: 230px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .sobreNos {
+    flex-direction: column;
+    width: 100%;
+
+  }
+
+  .sobreNos__img {
+    width: 100%;
+  }
+
+  .sobreNos__conteudo {
+    width: 100%;
+    padding: 0;
+  }
+
+  .sobreNos__conteudo>h2 {
+    width: 80%;
+  }
+
+  .sobreNos__conteudo>p {
+    padding: 0;
+    font-size: 14px;
+    padding: 20px;
+    line-height: 15px;
+    width: 80%;
+  }
+
+  .card {
+    height: 350px;
+    width: 80%;
+    margin-top: 40px;
+    margin-right: 40px;
   }
 }
