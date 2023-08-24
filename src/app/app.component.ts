@@ -14,7 +14,10 @@ export class AppComponent {
   }
 
   ngOnInit() {
-
+    let sections = document.querySelectorAll('section');
+    sections.forEach(section => {
+      section.classList.add('animate--sections');
+    })
   }
 
 }

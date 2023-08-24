@@ -75,8 +75,8 @@
 
 .home__banner {
   width: 100%;
-  height: 800px;
-  background-size: contain;
+  height: 600px;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -373,7 +373,7 @@
 
 
   .home__banner {
-    background-image: url('../assets/images/drogaria_dias_mobile.png');
+    background-image: url('../assets/images/ilustrações/Drogaria\ Dias.svg');
     padding-top: 90px;
     height: 230px;
     background-size: contain;
