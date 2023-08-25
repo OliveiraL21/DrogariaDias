@@ -20,6 +20,8 @@
   }
 }
 
+
+
 .animate--sections {
   animation: slide-in 2s ease-in-out;
 }
@@ -181,4 +183,5 @@ li {
 
 html {
   scroll-behavior: smooth;
+  --read-primary: #FF3131;
 }

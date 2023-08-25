@@ -5,30 +5,43 @@
   flex-direction: row;
   align-items: center;
   width: 100%;
-  background-color: #ee4d52;
+  background-color: var(--read-primary);
   position: fixed;
   z-index: 1;
+  padding: 15px;
 }
 
-.header>h1 {
-  font-size: 2.5rem;
+.header__logo__container {
+  width: 20%;
+  display: flex;
+  text-decoration: none;
+}
+
+.header__logo__container h1 {
+  font-size: 2em;
+  margin: 5px 0 0 5px;
+  padding: 4px;
+  font-weight: 600;
   color: #f8f8f8;
 }
 
 .header__logotipo {
-  width: 100px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   margin-left: 40px;
 }
 
+
+
 .header__menuContainer {
-  width: 70%;
+  width: 80%;
 }
 
 .header__menu {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  margin-right: 40px;
 }
 
 .header__menu__item {
@@ -37,7 +50,7 @@
 }
 
 .header__menu__item:hover {
-  transform: scale(1.2);
+  transform: scale(0.9);
 }
 
 .header__menu__link {
@@ -58,6 +71,16 @@
     margin-top: 10px;
   }
 
+  .header__logo__container {
+    width: 30%;
+  }
+
+  .header__logo__container h1 {
+    font-size: 1.2em;
+    margin-top: 30px;
+    padding: 0;
+  }
+
   .header {
     width: 100%;
   }
@@ -70,12 +93,11 @@
 
 .home__section {
   width: 100%;
-
 }
+
 
 .home__banner {
   width: 100%;
-  height: 600px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -206,8 +228,8 @@
 }
 
 .card__content>p {
-  width: 90%;
-  padding: 10px 40px 10px 10px;
+  width: 80%;
+  padding: 10px;
   text-align: left;
   color: #000;
 }
@@ -252,7 +274,7 @@
 .contatos_content {
   width: 100%;
   padding: 5rem;
-  background-color: #ee4d52;
+  background-color: var(--read-primary);
 }
 
 .contatos_titulo {
@@ -276,56 +298,59 @@
 
 
 @media screen and (max-width: 1024px) {
-  .header>h1 {
-    font-size: 24px;
-    width: 65%;
+
+  .header__logo__container {
+    width: 50%;
+  }
+
+  .header__logo__container h1 {
+    font-size: .9em;
+    width: 60%;
     margin-left: 5px;
   }
 
-  .home_content {
+  .header__menuContainer {
+    width: 50%;
+  }
+
+  .header__menu {
     display: flex;
-    flex-direction: column-reverse;
-
-    width: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
   }
 
-  .home_content_slogan {
+  .home__banner {
     width: 100%;
-    margin-top: 20px;
-  }
-
-  .home_content_slogan>h1 {
-    margin: 0 20px;
-    font-size: 36px;
-  }
-
-  .home_main_img {
-    width: 100%;
-  }
-
-  .home_img {
-    width: 100%;
-    height: 100%;
+    padding-top: 80px;
   }
 
   .sobreNos {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
-  .sobre_nos_img {
-    width: 90%;
+  .sobreNos__img {
+    width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
+    margin-left: 40px;
   }
 
-  .sobre_nos_conteudo {
-    width: 90%;
+  .sobreNos__conteudo {
+    width: 93.33%;
+    padding-right: 60px;
   }
 
   .cards {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .card {
+    margin-top: 30px;
   }
 
   .contatos {
@@ -373,10 +398,8 @@
 
 
   .home__banner {
-    background-image: url('../assets/images/ilustrações/Drogaria\ Dias.svg');
-    padding-top: 90px;
-    height: 230px;
-    background-size: contain;
+    padding-top: 80px;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 
@@ -409,17 +432,28 @@
 
 
   .card {
-    height: 350px;
-    width: 80%;
+    height: 300px;
+    width: 220px;
     margin-top: 40px;
     margin-right: 40px;
   }
 
+  .card__content {
+    font-size: .8em;
+  }
+
+  .valores__list {
+    font-size: 12px;
+    margin-top: -8px;
+  }
+
   .contatos__list {
     padding: 0 10px;
+    font-size: 12px;
   }
 
   .contatos__copyright {
     padding: 0 10px;
+    font-size: 12px;
   }
 }
